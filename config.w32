@@ -1,0 +1,10 @@
+// $Id$
+// vim:ft=javascript
+
+ARG_ENABLE("bbcode", "BBcode", "no");
+
+if (PHP_BBCODE != "no") {
+	EXTENSION("bbcode", "php_bbcode.c");
+	ADD_SOURCES(configure_module_dirname + "/lib", "bbcode2.c bstrlib.c", "bbcode");
+	AC_DEFINE('HAVE_BBCODE', 1, 'Have BBCODE library');
+}
