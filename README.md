@@ -25,3 +25,6 @@ $ ln -s /etc/php/8.2/mods-available/bbcode.ini /etc/php/8.2/cli/conf.d/20-bbcode
 ```
 $ php8.2 -d extension=bbcode.so -i | grep "BBCode Extension Version"
 ```
+
+# Buy me a coffe
+https://www.paypal.com/donate/?hosted_button_id=Z4L2Q8NE2JPRS
