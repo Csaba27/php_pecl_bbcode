@@ -10,7 +10,7 @@ Original version can be found here https://pecl.php.net/package/bbcode <br>
 
 ```
 $ apt install php-pear php8.2-dev
-$ git clone https://github.com/Csaba27/php_pecl_bbcode_new.git
+$ git clone https://github.com/Csaba27/php_pecl_bbcode.git
 $ cd bbcode && phpize8.2
 $ ./configure --with-php-config=/usr/bin/php-config8.2
 $ make clean && make && make install
