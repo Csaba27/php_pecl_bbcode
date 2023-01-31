@@ -1,5 +1,7 @@
-PHP_ARG_ENABLE(bbcode,whether to enable C based BBCode support,
-[  --enable-bbcode         Enable BBCode support])
+PHP_ARG_ENABLE([bbcode],
+  [whether to enable C based BBCode support],
+  [AS_HELP_STRING([--enable-bbcode],
+    [Enable BBCode support])])
 
 if test "$PHP_BBCODE" = "yes"; then
   AC_DEFINE(HAVE_BBCODE,1,[Whether you want BBCode support])
