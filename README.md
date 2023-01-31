@@ -16,14 +16,25 @@ $ ./configure --with-php-config=/usr/bin/php-config8.2
 $ make clean && make && make install
 $ echo "extension=bbcode.so" > /etc/php/8.2/mods-available/bbcode.ini
 
-# Symlink to cli and fpm version
+# Symlink to fpm version
 $ ln -s /etc/php/8.2/mods-available/bbcode.ini /etc/php/8.2/fpm/conf.d/20-bbcode.ini
+
+# Symlink to cli version
 $ ln -s /etc/php/8.2/mods-available/bbcode.ini /etc/php/8.2/cli/conf.d/20-bbcode.ini
+
+# Restart fpm service for apply changes
+$ service php8.2-fpm restart
 ```
 
 # Test
 ```
 $ php8.2 -d extension=bbcode.so -i | grep "BBCode Extension Version"
+```
+
+# Uninstall
+```
+$ rm /etc/php/8.2/mods-available/bbcode.ini && rm $(php-config8.2 --extension-dir)/bbcode.so
+$ service php8.2-fpm restart
 ```
 
 # Buy me a coffe
