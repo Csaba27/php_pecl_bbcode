@@ -1,10 +1,11 @@
-# PHP - PECL bbcode extension<br><br>
-Compatibile with php 7.x, 8.x, PHP >= 8.2 (it also supports the latest versions)<br>
-You can find the documenation here http://php.adamharvey.name/manual/en/ref.bbcode.php <br>
-Original version can be found here https://pecl.php.net/package/bbcode <br>
-<br>
-<br />
-# Installation on Linux <br />
+# PHP - PECL bbcode extension
+
+Compatibile with php 7.x, 8.x, PHP >= 8.2 (it also supports the latest versions)
+You can find the documenation here http://php.adamharvey.name/manual/en/ref.bbcode.php
+Original version can be found here https://pecl.php.net/package/bbcode
+
+
+# Installation on Linux
 * (recommended ubuntu 20.04 and above)
 
 
@@ -42,7 +43,3 @@ rm /etc/php/8.2/mods-available/bbcode.ini && rm (php-config8.2 --extension-dir)/
 
 service php8.2-fpm restart
 ```
-
-# Buy me a coffe
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=Z4L2Q8NE2JPRS)
